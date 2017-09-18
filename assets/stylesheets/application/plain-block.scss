@@ -5,12 +5,20 @@
   box-sizing: border-box;
   padding-left: 320px;
 
-  .animation,
+  .animation-container,
   .total {
     position: absolute;
     z-index: 1;
     left: 0;
     top: 0;
+  }
+
+  .animation-container {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background-color: fade-out(#1890ff, 0.85);
   }
 
   .total {
