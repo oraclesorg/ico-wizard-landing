@@ -1,0 +1,13 @@
+.side-slides {
+  position: relative;
+  margin-bottom: 200px;
+  box-sizing: border-box;
+
+  &_left {
+    padding-left: 530px;
+  }
+
+  &_right {
+    padding-right: 530px;
+  }
+}

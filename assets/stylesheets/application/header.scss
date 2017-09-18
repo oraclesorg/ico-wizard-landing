@@ -1,0 +1,17 @@
+.header {
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  left: 20px;
+  right: 20px;
+  top: 0;
+  padding-top: 22px;
+
+  &-logo {
+    @include image-2x('../images/logo@2x.png');
+    width: 149px;
+    height: 35px;
+    float: left;
+    background-image: url(../images/logo.png);
+  }
+}

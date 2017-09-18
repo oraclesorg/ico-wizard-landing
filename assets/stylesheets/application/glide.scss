@@ -1,0 +1,99 @@
+@import "../vendor/glide";
+
+.glide {
+  $this: &;
+
+  &:not(&-carousel) {
+    img {
+      width: 100%;
+    }
+
+    #{$this}__wrapper {
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0px 20px 40px 0 fade-out(#646f8c, 0.65);
+    }
+
+    #{$this}__slide {
+      overflow: hidden;
+      border-radius: 10px;
+    }
+  }
+
+  &-carousel {
+    margin-bottom: 90px;
+  }
+
+  &_howey {
+    #{$this}__wrapper {
+      width: 960px;
+      height: 480px;
+      margin-top: 70px;
+    }
+
+    #{$this}__bullets {
+      margin: 60px 0 100px;
+    }
+  }
+
+  &_side {
+    min-height: 407px;
+
+    &.side-slides_left {
+      #{$this}__wrapper {
+        right: 511px;
+      }
+    }
+
+    &.side-slides_right {
+      #{$this}__wrapper {
+        left: 511px;
+      }
+    }
+
+    #{$this}__wrapper {
+      position: absolute;
+      top: 0;
+      width: 717px;
+      height: 407px;
+    }
+
+    #{$this}__bullets {
+      margin: 40px 0 20px;
+    }
+  }
+
+  img {
+    display: block;
+    margin: 0;
+  }
+
+  &__track {
+    margin: 0;
+  }
+
+  &__bullets {
+    overflow: hidden;
+    font-size: 0;
+  }
+
+  &__bullet {
+    transition: 0.3s background-color;
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    background-color: #d0d4dc;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    &.active {
+      background-color: #0fb3ff;
+    }
+  }
+}

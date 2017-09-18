@@ -1,0 +1,22 @@
+.nav {
+  float: right;
+  line-height: 35px;
+  font-size: 0;
+
+  &-i {
+    transition: 0.3s opacity;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 40px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: normal;
+    font-size: 13px;
+    font-weight: bold;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

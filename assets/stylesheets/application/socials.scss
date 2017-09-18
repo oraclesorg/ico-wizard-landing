@@ -1,0 +1,56 @@
+.socials {
+  float: right;
+  margin-left: 40px;
+
+  &-i {
+    transition: 0.3s opacity;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 36px;
+    height: 36px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:before {
+      @include image-2x('../images/socials@2x.png', 16px, 43px);
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      background-image: url(../images/socials.png);
+    }
+
+    &_btc {
+      &:before {
+        width: 12px;
+      	height: 16px;
+        margin: -8px 0 0 -6px;
+      	background-position: 0 0;
+      }
+    }
+
+    &_reddit {
+      &:before {
+        width: 16px;
+        height: 14px;
+        margin: -7px 0 0 -8px;
+        background-position: 0 -16px;
+      }
+    }
+
+    &_twitter {
+      &:before {
+        width: 16px;
+        height: 13px;
+        margin: -6.5px 0 0 -8px;
+        background-position: 0 -30px;
+      }
+    }
+  }
+}

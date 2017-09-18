@@ -1,0 +1,67 @@
+.products-table {
+  width: 100%;
+  margin-bottom: 200px;
+  border-collapse: collapse;
+
+  .icon {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    &_yes {
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAMAAAAYGszCAAAAQlBMVEX///////////////////////////////////////////////////////////////////////////////////////8Alm/HAAAAFXRSTlMAQUNGR0tNUFdYXeDh5ufo6uv29/zCLM/rAAAAUklEQVR42m3IWw6AIAwF0ar1ASpUpPvfqrEJuaFh/uaQ70iyeotV9R6Y5oHVQLtcc2+RSFTL4oxObQqjqZjCLDZlmMXvr806hUGbdQpDW3oC7gNx5QgVeYqTXwAAAABJRU5ErkJggg==);
+      background-color: #6d2da9;
+      background-size: 10px 7px;
+    }
+
+    &_yes-active {
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAMAAAAYGszCAAAARVBMVEVtLan///9tLaltLaltLaltLaltLaltLaltLaltLaltLaltLaltLaltLaltLaltLaltLaltLaltLaltLaltLaltLaltLalCg8PuAAAAFnRSTlMAAEFDRkdLTVBXWF3g4ebn6Orr9vf8kHbQLwAAAFhJREFUeNptyNsSQCAUBdB9kEshSef/PxXNHk2m9bjwt/gw/s8l1b1xejQuWcxh6+tzgqAah/oEq3LLCbrILSeAyWt4yPns9S6PyeUxuTwml8fMJn9afHkDwqoItYXpRQ8AAAAASUVORK5CYII=);
+      background-color: #fff;
+      background-size: 10px 7px;
+    }
+
+    &_no {
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAAY1BMVEX///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+Dm4mgAAAAIHRSTlMAMzQ7PD0+RkhJUFtc1dbX2Nnc4+Xn6Ons7/Dy8/T4+ah7VlwAAABtSURBVHjaRc9JEoJAFATRtBtFcQQUwfHf/5RG2AFZy7fKorm1Gdx2eB7oI16VtvtEjJyiqBZH8ruoNq1gU1RLgKqpGqqGupiq2fwNy0BTtcleLflCA1VDrTVY/zVznU298JhN7dmP5wSo3b35AWpPFSrJzRbEAAAAAElFTkSuQmCC);
+      background-color: #e00677;
+      background-size: 10px 10px;
+    }
+  }
+
+  th,
+  td {
+    vertical-align: middle;
+    padding: 18px 0;
+
+    &:nth-child(2) {
+      background-color: #6d2da9;
+      color: #fff;
+      font-weight: bold;
+    }
+  }
+
+  th {
+    border-bottom: 3px solid #dadce0;
+    color: #485166;
+    font-size: 18px;
+    font-weight: normal;
+
+    &:nth-child(2) {
+      border-bottom: 3px solid #8a57ba;
+      border-radius: 7px 7px 0 0;
+    }
+  }
+
+  td {
+    border-bottom: 1px solid #dadce0;
+    color: #646f8c;
+    font-size: 13px;
+
+    &:nth-child(2) {
+      border-bottom: 1px solid #8a57ba;
+    }
+  }
+}

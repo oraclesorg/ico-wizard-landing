@@ -1,0 +1,68 @@
+.advantages {
+  overflow: hidden;
+  margin-bottom: 70px;
+
+  $this: &;
+
+  &-i {
+    float: left;
+    width: 31%;
+
+    &:not(:last-child) {
+      margin-right: 3.5%;
+    }
+
+    #{$this}-icon:before {
+      @include image-2x('../images/advantages@2x.png', 30px, 90px);
+      content: '';
+      transform: translate(-50%, -50%);
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      background-image: url(../images/advantages.png);
+    }
+
+    &_global {
+      #{$this}-icon:before {
+        width: 30px;
+      	height: 30px;
+      	background-position: 0 -30px;
+      }
+    }
+
+    &_safe {
+      #{$this}-icon:before {
+        width: 24px;
+      	height: 30px;
+      	background-position: 0 -60px;
+      }
+    }
+
+    &_easy {
+      #{$this}-icon:before {
+        width: 30px;
+      	height: 30px;
+      	background-position: 0 0;
+      }
+    }
+  }
+
+  &-title {
+    margin-bottom: 10px;
+    color: #485166;
+    font-size: 24px;
+  }
+
+  &-description {
+    line-height: 24px;
+  }
+
+  &-icon {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    margin-bottom: 20px;
+    border-radius: 17px 0;
+    background-color: #f8f4fb;
+  }
+}

@@ -1,0 +1,74 @@
+.carousel {
+  $this: &;
+
+  &-i {
+    transition: 0.3s transform, 0.3s box-shadow;
+    display: flex;
+    overflow: hidden;
+    width: 350px;
+    height: 130px;
+    margin: 0 auto;
+    border-radius: 5px;
+    text-decoration: none;
+
+    &:hover {
+      transform: translateY(-5%);
+      box-shadow: 0px 10px 30px 0 fade-out(#646f8c, 0.65);
+    }
+
+    &_oracles {
+      background-color: #562486;
+
+      #{$this}-logo {
+        background-color: #6d2da9;
+      }
+    }
+
+    &_birdcoin {
+      background-color: #0f68a1;
+
+      #{$this}-logo {
+        background-color: #b4edf2;
+      }
+    }
+  }
+
+  &-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 13px;
+  }
+
+  &-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+  }
+
+  &-title {
+    margin-bottom: 5px;
+    color: #fafafb;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  &-description {
+    color: fade-out(#fafafb, 0.5);
+    line-height: 16px;
+    font-size: 12px;
+  }
+
+  &-total {
+    display: flex;
+    justify-content: space-between;
+
+    &-title {
+      margin-bottom: 3px;
+      color: #fafafb;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+}

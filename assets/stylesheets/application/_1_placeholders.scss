@@ -1,0 +1,10 @@
+%clear {
+  clear: both;
+
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
